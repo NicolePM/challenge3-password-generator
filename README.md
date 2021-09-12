@@ -19,3 +19,7 @@ Open the website. Click the generate password button on the page.  A message pro
 
 ## Contribution
 Made with ❤️ by Nicole Mitchell
+
+## License info
+Adobe Stock background image
+Copyright © 2021 Adobe. 
