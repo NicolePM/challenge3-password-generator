@@ -45,7 +45,7 @@ function generateSecurePwd()
 		numberPrompt= parseInt(alert("Your password must be a lenghth between 8 and 128 characters"));
 		  return null;
 	   }
-			
+			var userInputChars;
 			//Validate user prompt choices: User has a choice to include numbers, UPPER CASE letters, lower case letters and special characters.
 			hasNumericChar= confirm("Would you like to include numbers in your password?");
 			hasUppercaseChar= confirm("Would you like to include 'UPPER CASE' letters in your password?");
@@ -63,23 +63,29 @@ function generateSecurePwd()
 //		Validation on if password is to include numbers	
   	if (hasNumericChar){	
 		pwdChoices = pwdChoices.concat(numberChar);
+		userInputChars="Numbers/ "
 	}
 	
 //		Validate on if password is to include special characters	
 	if (hasSpecialChar){
 		pwdChoices= pwdChoices.concat(specialChar);
+		userInputChars+="Special characters/"
  	}
 	
 //		Validation on if password is to include 'UPPER CASE' characters	
 	if (hasUppercaseChar){
 		pwdChoices= pwdChoices.concat(upperCaseChar);
+		userInputChars+= "Upper case characters/ "
 	}
 	
 //   	Validation on if password is to include 'lower case' characters
 	if(hasLowercaseChar){
 		pwdChoices= pwdChoices.concat(lowerCaseChar);
-	
+		userInputChars+='lower case characters/ '
 	}
+	//Confirm user selections
+	alert("Your password will contain "+ userInputChars);
+	
 //		Calculations to generate the password to include password lenght, selection criteria, 			and validations
 	for (var i = 0; i < pwdNumberPrompt; i++) {
 		 console.log(pwdNumberPrompt);
