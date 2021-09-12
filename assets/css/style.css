@@ -1,68 +1,52 @@
-/*Adding body style*/
-body{
-    margin: 0;
-    padding: 0;
-}
-/*END body*/
 
-/*Adding hero */
-.hero{
-position: relative;
-width: 100vw;
-height: 100vw;
-display: flex;
-justify-content: center;
-align-items: center;
-}
-
-.hero::before{
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: url("/assets/images/hero.jpeg");
-    background-repeat: no-repeat;
+/*Adding style to whole page*/
+html
+{
+	background: url("../images/hero.jpeg")no-repeat center center fixed;
     background-size: cover;
-    background-position: center center;
-    filter: brightness(60%);
+}
+/*Adding flex to container */
+.container{
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: flex-start;
+	margin: 0;
+	justify-content: center;
+	align-items: center;
+	width: 410px;
+	
+}
+/*Adding style to pwd prompts and button*/
+.pwd-h1{
+
+	text-align: left;
+	padding-top: 40px;	
+	color: white;
+	font-family:Consolas, "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco, "Courier New", "monospace";
 }
 
-.hero-content{
-    position: relative;
-    font-family: "Monserrat", sans-serif;
-    color: white;
-    text-align: center;
-    margin: 10px;
+.pwd-button{
+	cursor: pointer;
+	display: inline-block;
+	color: #011F32;
+	background-color: white;
+	padding: 2px 2px, 0;
+	border-radius: 2em;
+	text-decoration: none;
+	width: 150px;
+	text-align: center;
+	font-family:Consolas, "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco, "Courier New", "monospace";
+	font-weight: bolder;
+	height: 30px;
+	transition: all 0.2s;
 }
 
-.hero-title{
-    font-size: 48px;
-    font-weight: 600;
-    margin-bottom: 0;
+.pwd-button:hover{
+	background-color: #37A7E4;
+	color: lightcyan;
+	
 }
-
-.hero-sub{
-    font-size: 32px;
-    font-weight: 600;
-    margin-top: 16px;
-}
-
-.hero-button{
- background-color: #0d73af;
- color: white;
- border: 1px solid #085c8d;
- margin-top: 80px;
- padding: 15px 30px;
- font-family: "Monserrat", sans-serif;
- font-size: 18px;
- font-weight: 200;
- cursor: pointer;
-
-}
-
-.hero-button:hover{
-    background-color: #085c8d;
-    border: 1px solid #2479aa;
+.secure-h1{
+	width: 40px;
 }
