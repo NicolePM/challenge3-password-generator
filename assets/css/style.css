@@ -1,6 +1,6 @@
 
 /*Adding style to whole page*/
-html
+body
 {
 	background: url("../images/hero.jpeg")no-repeat center center fixed;
     background-size: cover;
@@ -38,7 +38,7 @@ html
 	text-align: center;
 	font-family:Consolas, "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco, "Courier New", "monospace";
 	font-weight: bolder;
-	height: 30px;
+	height: 35px;
 	transition: all 0.2s;
 }
 
